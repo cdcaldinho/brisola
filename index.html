@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Quadro de Tarefas</h1>
+
+  <main class="container">
+  
+    <div class="coluna criar" data-status="criar">
+      <h2>Criar Tarefa</h2>
+      <input type="text" id="novaTarefa" placeholder="Digite a tarefa...">
+      <button id="btnAdd">Adicionar</button>
+
+
+      <div id="listaCriar" class="lista"></div>
+
+   
+      <span class="contador">0 tarefas</span>
+    </div>
+
+  
+    <div class="coluna" id="afazer" data-status="afazer">
+      <h2>A Fazer</h2>
+      <div class="lista"></div>
+      <span class="contador">0 tarefas</span>
+    </div>
+
+    
+    <div class="coluna" id="andamento" data-status="andamento">
+      <h2>Em Andamento</h2>
+      <div class="lista"></div>
+      <span class="contador">0 tarefas</span>
+    </div>
+
+
+    <div class="coluna" id="concluido" data-status="concluido">
+      <h2>Concluído</h2>
+      <div class="lista"></div>
+      <span class="contador">0 tarefas</span>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.coluna {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coluna h2 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.criar input {
+  padding: 8px;
+  width: 80%;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.criar button {
+  padding: 8px 15px;
+  border: none;
+  background: #0011ff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.criar button:hover {
+  background: #0011ff;
+}
+
+.tarefa {
+  background: #e9ecef;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: grab;
+  width: 90%;
+  text-align: center;
+}
+
+.coluna.dragover {
+  background: #d1ecf1;
+  border-color: #0c5460;
+}
+.coluna {
+  position: relative;
+}
+
+.lista {
+  flex: 1;
+  width: 100%;
+}
+
+.contador {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 13px;
+  color: #555;
+  font-style: italic;
+}
